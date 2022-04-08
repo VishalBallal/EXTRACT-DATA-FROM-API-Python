@@ -63,8 +63,7 @@ else:
         cursor.execute("""drop table if exists assign1""")
         connection.commit()
 
-        cursor.execute(
-            """create table assign1
+        cursor.execute("""create table assign1
                         (userid           int,
                         id               int,
                         title   varchar(255),
@@ -72,8 +71,7 @@ else:
                         created         date,
                         updated         date,
                         deleted         date)
-                        """
-        )
+                        """)
 
         connection.commit()
         logging.debug("Table Created in Database")
